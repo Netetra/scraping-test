@@ -5,7 +5,7 @@ import datetime
 import time
 
 #WebhookのURLを入れる
-webhook_url = ""
+webhook_url = "https://discord.com/api/webhooks/984428325835505684/jIRww8J4vTCCqrGlZ3V9v2QISgGQastiMt2LxdLbGqz9lQCbUL7hvVBoYDC79D_iSzCk"
 url = "https://www.niihama-nct.ac.jp"
 headers = {'Content-Type': 'application/json'}
 
