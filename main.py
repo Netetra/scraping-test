@@ -58,7 +58,7 @@ async def get_tweet(TOKEN,user_id,now,old_tweet):
 async def main():
     old_msg = {"tweet":{},"topic":{}}
     while True:
-        print(old_msg)
+        print("[main]ループ開始")
         msg_get_task = []
         now = datetime.datetime.now()
         #Twitterから寮食のツイートを取得
@@ -72,6 +72,7 @@ async def main():
             else:
                 old_msg[list(old_msg)[i]] = msg[i]
                 status = requests.post(webhook_url,json.dumps(msg[i]),headers={'Content-Type': 'application/json'})
+        print("[main]送信完了 ループ終了")
         await asyncio.sleep(20)
 
 asyncio.run(main())
