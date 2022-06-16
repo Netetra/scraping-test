@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 TOKEN = ""
 #WebhookのURLを入れる
 webhook_url = ""
-school_url = "https://www.niihama-nct.ac.jp"
+school_url = ""
 twitter_api_url = "https://api.twitter.com/2"
 user_id = ""
 
